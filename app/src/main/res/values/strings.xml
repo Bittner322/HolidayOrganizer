@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HolidayOrganizer</string>
+
+    <!-- Home Screen -->
+    <string name="tab_home">Главная</string>
+    <string name="tab_settings">Настройки</string>
+</resources>
