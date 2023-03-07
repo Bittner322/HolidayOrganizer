@@ -32,7 +32,7 @@ internal fun BottomNavigationBar(
     modifier: Modifier = Modifier,
 ) {
     val rootController = LocalRootController.current as MultiStackRootController
-    val tabItems = rootController.tabItems.take(2) + null + rootController.tabItems.takeLast(2)
+    val tabItems = rootController.tabItems.take(1) + null + rootController.tabItems.takeLast(1)
     val navigationBarsHeight = LocalFixedInsets.current.navigationBarsHeight
     BottomAppBar(
         modifier = modifier,

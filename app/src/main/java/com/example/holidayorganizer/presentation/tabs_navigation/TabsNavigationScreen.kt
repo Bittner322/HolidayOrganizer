@@ -21,8 +21,6 @@ import com.example.holidayorganizer.core.theme.NoRippleTheme
 import com.example.holidayorganizer.core.theme.OrganizerTheme
 import com.example.holidayorganizer.core.ui.BottomNavigationBar
 import com.example.holidayorganizer.core.ui.navigation.tabs.TabsNavigationTree
-import com.example.holidayorganizer.presentation.tabs_navigation.tabs.HomeTab
-import com.example.holidayorganizer.presentation.tabs_navigation.tabs.SettingsTab
 import ru.alexgladkov.odyssey.compose.base.AnimatedHost
 import ru.alexgladkov.odyssey.compose.controllers.MultiStackRootController
 import ru.alexgladkov.odyssey.compose.controllers.TabNavigationModel
@@ -42,12 +40,6 @@ internal fun TabsNavigationScreen() {
             BottomNavigationBar(
                 selectedTabItem = selectedTabItem,
                 onItemSelect = { tab ->
-                    val eventName = when (tab.tabInfo.tabItem) {
-                        is HomeTab -> "TabHome"
-                        is SettingsTab -> "TabSettings"
-                        else -> "Undefined"
-                    }
-
                     val position = rootController.tabItems.indexOf(tab)
                     rootController.switchTab(position)
                 }
