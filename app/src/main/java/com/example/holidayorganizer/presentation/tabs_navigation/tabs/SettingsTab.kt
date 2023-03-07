@@ -15,8 +15,8 @@ class SettingsTab : TabItem() {
         get() {
             return TabConfiguration(
                 title = stringResource(R.string.tab_settings),
-                selectedIcon = painterResource(R.drawable.ic_radio_active),
-                unselectedIcon = painterResource(R.drawable.ic_radio_inactive),
+                selectedIcon = painterResource(R.drawable.ic_settings_active),
+                unselectedIcon = painterResource(R.drawable.ic_settings_inactive),
                 selectedColor = OrganizerTheme.color.primary,
                 unselectedColor = OrganizerTheme.color.content
             )
